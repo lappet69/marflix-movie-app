@@ -21,4 +21,9 @@
     @apply cursor-pointer text-sm font-light text-[#eaeaea] transition duration-300
     hover:text-[#333];
   }
+
+  .bannerBtn{
+    @apply flex items-center gap-x-2 rounded py-1.5 px-4 text-sm font-semibold transition
+    hover:opacity-75 md:py-2.5 md:px-8 md:text-xl
+  }
 }
