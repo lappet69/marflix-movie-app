@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 const barlow = Barlow_Condensed({
   subsets: ["latin"],
-  weight: "400"
+  weight: "500"
 })
 
 const Header = () => {
@@ -30,8 +30,8 @@ const Header = () => {
   }, [])
 
   return (
-    <header className={`${isScroll && 'bg-red-500'}  `}>
-      <div className={`${barlow.className} flex items-center space-x-2 md:space-x-10`}>
+    <header className={`${isScroll && 'bg-[#1a1a1a]'} ${barlow.className} `}>
+      <div className={` flex items-center space-x-2 md:space-x-10`}>
         <Image src="" width={100} height={50} alt="" className="cursor-pointer object-contain" />
         <ul className="hidden space-x-4 md:flex">
           {navMenus.map((menu, idx) => (
@@ -41,7 +41,7 @@ const Header = () => {
 
       </div>
 
-      <div className="flex items-center space-x-4 text-sm">
+      <div className="flex items-center space-x-4 text-sm md:text-xl lg:text-2xl text-white">
         <AiOutlineSearch className="hidden sm:inline h-6 w-6" />
         <p className="hidden lg:inline">Kids</p>
         <AiOutlineBell className="w-6 h-6" />

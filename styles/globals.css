@@ -18,8 +18,8 @@
 /* custom className */
 @layer components {
   .navLink{
-    @apply cursor-pointer text-sm font-light text-[#eaeaea] transition duration-300
-    hover:text-[#333];
+    @apply cursor-pointer text-sm md:text-xl lg:text-2xl font-light text-[#fff] transition duration-300
+    hover:text-[#bbb];
   }
 
   .bannerBtn{
