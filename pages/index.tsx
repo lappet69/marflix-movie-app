@@ -50,8 +50,6 @@ const Home = ({
           {/* Row */}
         </section>
 
-
-        <h2 className={`${inter.className} bg-red-100`}>helo tailwind</h2>
       </main>
     </div>
   )
