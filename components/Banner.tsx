@@ -25,7 +25,7 @@ const Banner = ({ netflixOriginals }: Props) => {
       <p className="max-w-xs text-xs md:max-w-lg md:text-lg lg:max-w-2xl text-shadow-md">{movie?.overview}</p>
 
       <div className="flex space-x-3">
-        <button className="bannerBtn bg-white"><FaPlay className="h-4 w-4 md:" />Play</button>
+        <button className="bannerBtn bg-white text-black"><FaPlay className="h-4 w-4 md:" />Play</button>
         <button className="bannerBtn bg-[gray]/70">More Info <InformationCircleIcon className="h-5 w-5 md:h-8 md:w-8" /></button>
       </div>
     </div>
