@@ -9,7 +9,16 @@ interface Props {
 const Thumbnail = ({ movie }: Props) => {
   return (
     <div className="relative h-28 min-w-[180px] cursor-pointer transition duration-200 ease-in-out md:h-36 md:min-w-[260px] md:hover:scale-105">
-      <Image src={`${baseUrlThumbnail}${movie?.backdrop_path || movie?.poster_path}`} loading="lazy" fill alt="" className="object-cover rounded-sm md:rounded " />
+      <Image
+        src={`${baseUrlThumbnail}${movie?.backdrop_path || movie?.poster_path}`}
+        loading="lazy"
+        decoding="async"
+        sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+        fill
+        alt=""
+        className="object-cover rounded-sm md:rounded " />
     </div>
   )
 }

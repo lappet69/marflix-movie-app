@@ -7,7 +7,7 @@
 /* html , body, heading */
 @layer base {
   body{
-    @apply bg-[#2C3E50] text-white !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-red-600;
+    @apply bg-[#1C1C1E] text-white !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-red-600;
   }
   header{
     @apply fixed top-0 z-50 flex w-full justify-between items-center px-4 py-4 transition-all lg:px-10 lg:py-6
@@ -24,5 +24,9 @@
   .bannerBtn{
     @apply flex items-center gap-x-2 rounded py-1.5 px-4 text-sm font-semibold transition
     hover:opacity-75 md:py-2.5 md:px-8 md:text-xl
+  }
+
+  .form-input{
+    @apply w-full outline-none rounded bg-[#333] px-5 py-3.5 placeholder-[gray] focus:bg-[#343434];
   }
 }
