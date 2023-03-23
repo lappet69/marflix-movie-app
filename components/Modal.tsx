@@ -71,15 +71,15 @@ const Modal = () => {
             playing={played}
             muted={muted}
           />
-          <div className='absolute bottom-5 flex w-full items-center justify-between px-10'>
+          <div className='absolute bottom-5 flex w-full items-center justify-between px-10 '>
             <div className='flex space-x-2'>
-              <button className='flex items-center gap-x-2 py-1 rounded bg-white/30 text-xl px-4 font-bold text-black transition hover:bg-[#eaeaea]/70'
+              <button className='flex items-center gap-x-2 py-1 rounded bg-white/30 text-xl px-2 font-bold !text-black transition hover:bg-[#eaeaea]/70'
                 onClick={() => setPlayed(!played)}
               >
                 {played ?
-                  <FaPause className='modalIcon text-black ' />
+                  <FaPause className='modalIcon text-black  hover:!text-black' />
                   :
-                  <FaPlay className='modalIcon text-black' />
+                  <FaPlay className='modalIcon text-black hover:!text-black' />
                 }
               </button>
               <button className='modalBtn'>
