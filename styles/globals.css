@@ -29,4 +29,11 @@
   .form-input{
     @apply w-full outline-none rounded bg-[#333] px-5 py-3.5 placeholder-[gray] focus:bg-[#343434];
   }
+
+  .modalBtn {
+    @apply flex h-11 w-11 items-center justify-center rounded-full border-2 border-[gray] bg-[#2a2a2a]/60 transition hover:border-white hover:bg-white/10;
+  }
+  .modalIcon{
+    @apply w-6 h-6  text-[gray] hover:text-white
+  }
 }

@@ -28,7 +28,7 @@ const Row = ({ title, movies }: Props) => {
   // console.log(rowRef.current!.scrollLeft, rowRef.current!.clientWidth)
   return (
     <div className="h-40 space-y-0.5 md:space-y-2">
-      <h2 className="w-56 cursor-pointer text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl">{title}</h2>
+      <h2 className="w-56 cursor-pointer text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl md:ml-4">{title}</h2>
       <div className="group relative md:ml-2">
         <ChevronLeftIcon className={`absolute top-0 left-2 bottom-0 z-40 m-auto w-9 h-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100 ${!isMoved && 'hidden'}`}
           onClick={() => handleClick("left")}
