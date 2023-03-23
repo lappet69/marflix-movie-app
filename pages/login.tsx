@@ -21,7 +21,6 @@ const Login = () => {
     setTimeout(() => { setError(null) }, 3000)
   }, [error])
 
-  console.log(login)
   const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
   if (user) {
     router.push(callbackUrl)
