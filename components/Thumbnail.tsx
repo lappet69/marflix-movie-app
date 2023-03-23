@@ -29,6 +29,7 @@ const Thumbnail = ({ movie }: Props) => {
         fill
         alt=""
         className="object-cover rounded-sm md:rounded " />
+      <p className="px-2 absolute z-50 w-full bg-cardOverlay h-full hover:bg-[gray]/10">{movie.title}</p>
     </div>
   )
 }
